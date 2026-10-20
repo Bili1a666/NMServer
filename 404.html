@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面未找到 - New MinCCB Server</title>
+  
+  <!-- Font Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Material Design 3 Design Tokens - Light Blue Theme */
+    :root {
+      --md-sys-color-primary: #00639A;
+      --md-sys-color-on-primary: #FFFFFF;
+      --md-sys-color-surface: #F8FAFC;
+      --md-sys-color-on-surface: #0F172A;
+      --md-sys-color-on-surface-variant: #475569;
+      
+      --md-font-en: 'Google Sans', sans-serif;
+      --md-font-zh: 'Noto Sans SC', 'Source Han Sans SC', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--md-font-en), var(--md-font-zh);
+      background-color: var(--md-sys-color-surface);
+      color: var(--md-sys-color-on-surface);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top App Bar */
+    .top-app-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background-color: var(--md-sys-color-surface);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand-title {
+      font-family: var(--md-font-en);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--md-sys-color-on-surface);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--md-sys-color-on-surface-variant);
+      font-size: 15px;
+      font-weight: 500;
+      padding: 4px 0;
+      position: relative;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--md-sys-color-primary);
+    }
+
+    /* Hover Underline Animation */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--md-sys-color-primary);
+      transition: width 0.25s ease-in-out;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .error-code {
+      font-family: var(--md-font-en);
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 8px;
+      color: var(--md-sys-color-primary);
+    }
+
+    .hero-subtitle {
+      font-family: var(--md-font-zh);
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--md-sys-color-on-surface-variant);
+      margin-bottom: 32px;
+    }
+
+    /* MD3 Fully Rounded Light Blue Button */
+    .md-button-filled {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 32px;
+      border-radius: 9999px;
+      background-color: var(--md-sys-color-primary);
+      color: var(--md-sys-color-on-primary);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+      transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+    }
+
+    .md-button-filled:hover {
+      background-color: #004d7a;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .md-button-filled:active {
+      transform: scale(0.98);
+    }
+
+    /* Footer */
+    footer {
+      padding: 24px 32px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--md-sys-color-on-surface-variant);
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+
+    footer a {
+      color: var(--md-sys-color-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top App Bar -->
+  <header class="top-app-bar">
+    <a href="index.html" class="brand-title">New MinCCB Server</a>
+    <nav class="nav-links">
+      <a href="index.html">主页</a>
+      <a href="javascript:void(0)">交通线路图</a>
+    </nav>
+  </header>
+
+  <!-- 404 Error Section -->
+  <main>
+    <div class="error-code">404</div>
+    <p class="hero-subtitle">页面未找到</p>
+    <a href="index.html" class="md-button-filled">返回主页</a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>本站由GitHub提供技术支持</p>
+    <p><a href="javascript:void(0)">加入QQ群</a></p>
+  </footer>
+
+</body>
+</html>

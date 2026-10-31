@@ -4,11 +4,11 @@
 ## 进服前
 
 
-> [!NOTE] 加入QQ群
+>加入QQ群
 >[点击我加入QQ群](https://qm.qq.com/q/nigjItvGrS)
 
 
-> [!NOTE] 查看官网
+>查看官网
 >[点击我访问官网](https://bili1a666.github.io/NMServer)
 
 

@@ -18,6 +18,6 @@
 
 - #### 请认真遵守QQ群公告中的守则，如有违反，后果自负
 
-- #### 服务器线路图：[点击我查看线路图](http://tmap.mcs.weiyint.top:8888)
+- #### 服务器线路图：[点击我查看线路图](#)
 
 ###### **©Copyright [WeiYin Technology](https://bili1a666.github.io/weiyintech/) 2018 ~ 2026 -- [New MinCCB Server](https://bili1a666.github.io/NMServer) 2023 ~ 2026**
